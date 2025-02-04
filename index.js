@@ -10,6 +10,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 // Set EJS as the templating engine
 app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
+
 
 // Serve static files (CSS, images, etc.)
 app.use(express.static(__dirname + "/public"));
